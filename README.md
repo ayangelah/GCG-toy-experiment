@@ -35,7 +35,9 @@ while actual forward-pass loss determines which candidate is retained.
 - no universal multi-prompt / multi-model optimization
 
 ## What I learned
-[3–5 concise bullets]
+- Much of manipulating models seems to be from applying "pressures" to create gradients we can learn on.
+- These loss functions can be used to pressure white-box models to effectively teach us what prompt suffixes might trigger the desired response.
+- GCG is autonomous, able to adapt to different white-box models, and generalizable to other black-box models including much larger frontier models which suggests that there are common representations and gradients between models that are trained on similar functions even if their training process/dataset was very different. 
 
 ## Reference
 Zou et al., "Universal and Transferable Adversarial Attacks on Aligned
